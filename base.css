@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
 .sub-top-nav-bar {
     height: 3em;
     background: #234567;
@@ -36,6 +41,7 @@ body {
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
     padding: 0 1em;
     background-color: #fff;
+    z-index: 1000;
 }
 
 .top-nav-bar-logo {
@@ -68,11 +74,11 @@ body {
     padding: 4em;
     display: flex;
     align-items: center;
-    background-image: url('assets/hero.jpg');
+    background-image: url('assets/ex\ placeholder.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .hero-content {
@@ -80,7 +86,9 @@ body {
 }
 
 .hero-content-title {
-    font-size: 2.5em;
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .hero-content-subtitle {
@@ -90,24 +98,71 @@ body {
 
 .section {
     padding: 2rem;
+    margin: 2rem;
 }
 
 .section-header {
     font-size: 2em;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     text-align: center;
 }
 
-.section-cards-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section-card {
+.bb-card {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    justify-content: stretch;
 }
 
-.section-card-img img {
+.bb-card-img {
+    margin-bottom: 1.5em;
+}
+
+.bb-card-img img {
     height: auto;
-    width: auto;
+    width: 100%;
+}
+
+.bb-card-title {
+    margin-bottom: 1.5em;
+}
+
+.bb-card-title h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bb-card-body {
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.callout-container {
+    height: 1000px;
+    padding: 0 0 4em 4em;
+    background-image: url('assets/placeholder.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.callout-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.callout-content {
+    background-color: #e9ecef;
+    padding: 4em;
+    max-width: 60%;
+    height: auto;
+}
+
+.callout-title {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 1em;
 }
