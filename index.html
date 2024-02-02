@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <div class="nav-bar-hamburger">
-                    <button type="button" class="btn btn-light btn-lg">
+                    <button type="button" class="btn btn-light btn-lg" id="nav-menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -179,12 +179,15 @@
                         At Behbros...value 1, value 2, value 3, value 4
                     </div>
                     <div class="callout-sub">
-                        <p class="m-0">
+                        <p class="m-1">
                             Drive awareness to increase engagement we need distributors to evangelize the new line to
                             local markets, and we need to follow protocol. Business impact synergize productive
                             mindfulness, and push back, or price point. I don't want to drain the whole swamp, i just
                             want to shoot some alligators. Single wringable neck baseline
                         </p>
+                    </div>
+                    <div class="bb-card-action">
+                        <a href="http://" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -269,5 +272,14 @@
         Footer
     </footer>
 </body>
+<script>
+    $(function() {
+        console.log('jQ')
+        $('#nav-menu').click(function() {
+            console.log('click')
+            $('.nav-bar-items').toggleClass('d-block');
+        });
+    });
+</script>
 
 </html>
